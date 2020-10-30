@@ -1,5 +1,4 @@
 import React from 'react'
-import Link from 'next/link'
 
 export default function Footer() {
     return (
@@ -21,7 +20,7 @@ export default function Footer() {
                         <p className="text-white text-center">Copyright &copy;
 					<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is
 					made with <i className="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com"
-                                target="_blank">Colorlib</a></p>
+                                target="_blank">Ashish</a></p>
                     </div>
                 </div>
             </section>

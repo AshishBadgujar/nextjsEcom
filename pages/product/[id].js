@@ -125,24 +125,24 @@ const Product = ({ productData }) => {
   )
 }
 
-export async function getServerSideProps({ params: { id } }) {
-  const res = await Axios.get(`${baseUrl}/api/product/${id}`)
-  const productData = res.data
-  return {
-    props: { productData }
-  }
-}
-// export async function getStaticProps({ params: { id } }) {
+// export async function getServerSideProps({ params: { id } }) {
 //   const res = await Axios.get(`${baseUrl}/api/product/${id}`)
 //   const productData = res.data
 //   return {
 //     props: { productData }
 //   }
 // }
-// export async function getStaticPaths() {
-//   return {
-//     paths: [], fallback: true
-//   }
-// }
+export async function getStaticProps({ params: { id } }) {
+  const res = await Axios.get(`${baseUrl}/api/product/${id}`)
+  const productData = res.data
+  return {
+    props: { productData }
+  }
+}
+export async function getStaticPaths() {
+  return {
+    paths: [], fallback: true
+  }
+}
 
 export default Product
