@@ -12,24 +12,19 @@ export default function Signup() {
 
     const handleSubmit = async (e) => {
         e.preventDefault()
-        await Axios.post(`${baseUrl}/api/signup`, {
+        const res = await Axios.post(`${baseUrl}/api/signup`, {
             name,
             email,
             password,
-        }).then(res => {
-            // console.log(res.data)
-            if (res.data.message) {
-                M.toast({ html: res.data.message, classes: "green" });
-                router.push('/login')
-            }
-            if (res.data.err) {
-                M.toast({ html: res.data.err, classes: "red" });
-            }
         })
-            .catch(error => {
-                console.log(error)
-                M.toast({ html: `Something went wrong please try again !`, classes: "red" });
-            })
+        const res2 = res.data
+        if (res2.message) {
+            M.toast({ html: res2.message, classes: "green" });
+            router.push('/login')
+        }
+        if (res2.err) {
+            M.toast({ html: res2.err, classes: "red" });
+        }
     }
     return (
         <section className="login_box_area z-depth-3">

@@ -29,12 +29,11 @@ export default function Create() {
             category,
         })
         const res2 = res.data
-        console.log(res2)
         if (res2.err) {
             M.toast({ html: res2.err, classes: "red" });
         } else {
             M.toast({ html: `Your product is submitted !`, classes: "green" });
-            router.push('/create')
+            router.push('/')
         }
     }
 

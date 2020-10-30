@@ -76,7 +76,7 @@ const addProduct = async (req, res) => {
             res.json({ message: 'Product added to cart !' })
         }
     } catch (error) {
-        console.log(error)
+
         return res.json({ err: "you must logged in !" })
     }
 }

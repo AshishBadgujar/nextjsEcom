@@ -12,23 +12,19 @@ export default function Login() {
 
     const handleSubmit = async (e) => {
         e.preventDefault()
-        await Axios.post(`${baseUrl}/api/login`, {
+        const res = await Axios.post(`${baseUrl}/api/login`, {
             email,
             password
-        }).then(res => {
-            if (res.data.err) {
-                M.toast({ html: res.data.err, classes: "red" });
-            } else {
-                cookie.set('token', res.data.token)
-                cookie.set('user', res.data.user)
-                M.toast({ html: `you are successfully logged in !`, classes: "green" });
-                router.push('/account')
-            }
         })
-            .catch(error => {
-                console.log(error)
-                M.toast({ html: `Something went wrong please try again !`, classes: "red" });
-            })
+        const res2 = res.data
+        if (res2.err) {
+            M.toast({ html: res2.err, classes: "red" });
+        } else {
+            cookie.set('token', res.data.token)
+            cookie.set('user', res.data.user)
+            M.toast({ html: `you are successfully logged in !`, classes: "green" });
+            router.push('/account')
+        }
     }
     return (
         <section className="login_box_area z-depth-3">

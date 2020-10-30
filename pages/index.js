@@ -28,15 +28,6 @@ export async function getStaticProps() {
         }
     }
 }
-// export async function getServerSideProps() {
-//     const res = await Axios.get(`${baseUrl}/api/products`)
-//     const products = res.data
-//     return {
-//         props: {
-//             products,
-//         }
-//     }
-// }
 
 export default HomePage
 

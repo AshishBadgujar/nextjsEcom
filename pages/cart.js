@@ -8,7 +8,6 @@ import Link from 'next/link'
 import StripeCheckout from 'react-stripe-checkout';
 
 function Cart({ error, products }) {
-    console.log(products)
     const { token } = parseCookies()
     const router = useRouter()
     const [cProducts, setCproducts] = useState(products)
@@ -30,7 +29,6 @@ function Cart({ error, products }) {
     }
 
     const handleRemove = async (productId) => {
-        console.log(productId)
         const res = await Axios.delete(`${baseUrl}/api/cart`, {
             headers: {
                 "Authorization": token
@@ -40,7 +38,6 @@ function Cart({ error, products }) {
             }
         })
         const res2 = res.data
-        // console.log(res2)
         if (res2.err) {
             M.toast({ html: res2.err, classes: "red" })
             cookie2.remove('user')
@@ -71,7 +68,6 @@ function Cart({ error, products }) {
         )
     }
     const handleCheckout = async (paymentInfo) => {
-        console.log(paymentInfo)
         const res = await Axios.post(`${baseUrl}/api/payment`, {
             headers: {
                 "Authorization": token
@@ -81,7 +77,6 @@ function Cart({ error, products }) {
             }
         })
         const res2 = res.data
-        console.log(res2)
     }
     const Total = () => {
         return (

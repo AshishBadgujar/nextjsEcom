@@ -12,7 +12,7 @@ const Product = ({ productData }) => {
   const modalRef = useRef(null)
   const cookie = parseCookies()
   const user = cookie.user ? JSON.parse(cookie.user) : ""
-  console.log(user)
+
   useEffect(() => {
     M.Modal.init(modalRef.current)
   }, [])
@@ -70,7 +70,7 @@ const Product = ({ productData }) => {
       }
     })
     const res2 = res.data
-    console.log(res2)
+
     if (res2.err) {
       M.toast({ html: res2.err, classes: "red" })
       cookie2.remove('user')
@@ -125,13 +125,7 @@ const Product = ({ productData }) => {
   )
 }
 
-// export async function getServerSideProps({ params: { id } }) {
-//   const res = await Axios.get(`${baseUrl}/api/product/${id}`)
-//   const productData = res.data
-//   return {
-//     props: { productData }
-//   }
-// }
+
 export async function getStaticProps({ params: { id } }) {
   const res = await Axios.get(`${baseUrl}/api/product/${id}`)
   const productData = res.data
