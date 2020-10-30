@@ -1,0 +1,29 @@
+{
+  "name": "nextproj",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "author": "ashish",
+  "license": "ISC",
+  "dependencies": {
+    "@zeit/next-css": "^1.0.1",
+    "axios": "^0.19.2",
+    "bcryptjs": "^2.4.3",
+    "js-cookie": "^2.2.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.10.0",
+    "next": "^9.4.4",
+    "nookies": "^2.4.0",
+    "react": "^16.13.1",
+    "react-alice-carousel": "^2.0.2",
+    "react-dom": "^16.13.1",
+    "react-stripe-checkout": "^2.6.3",
+    "stripe": "^8.98.0",
+    "uuid": "^8.3.0"
+  }
+}
