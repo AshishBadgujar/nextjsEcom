@@ -187,7 +187,7 @@ button, input {
     color: black;
 }
 .login_form_inner{
-    width: 48%;
+    width: 45%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -221,7 +221,7 @@ button, input {
 .cart{
     display: flex;
     justify-content: space-between;
-    padding: 30px;
+    /* padding: 30px; */
 }
 .cart div h6{
     margin-bottom: 20px;
@@ -286,6 +286,9 @@ button, input {
     .card img{
         max-height: 200px;
     }
+    .login_form_inner{
+        width: 80%;
+    }
 }
 
 
@@ -305,6 +308,9 @@ button, input {
     .header-search-form input {
         width: 300px !important;
     }
+    .alice-carousel__wrapper .carousel-item{
+        height: 250px;
+    }
     .user-panel{
         display: flex;
     }
@@ -316,6 +322,13 @@ button, input {
         padding-top: 14px !important;
         padding-bottom: 14px !important;
     }
+    .alice-carousel__stage-item .card{
+        width: 170px;
+        height: 100%;
+    }
+    .alice-carousel__stage-item .card .card-image img{
+        height: 230px !important;
+    }
     .row h2{
         font-size: 30px !important;
     }
@@ -325,6 +338,18 @@ button, input {
         font-size: 9px;
         margin-left: 0;
     }
+    .creat_box_area{
+        padding: 20px;
+        margin: 5px;
+    }
+    .login_box_area{
+        margin: 5px;
+    }
+    .login_box_img{
+        height: 300px;
+        padding: 20px;
+    }
+   
     /* .offer-card h1{
        font-size: 20px;
     } */

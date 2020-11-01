@@ -112,7 +112,7 @@ const Product = ({ productData }) => {
                 </button>
               }
             </div>
-            {user.role == 'admin' && user.role == 'root' &&
+            {user.role == 'root' &&
               <button data-target="modal1" className="btn modal-trigger waves-effect waves-light #c62828 red darken-3">Delete
               <i className="material-icons left">delete</i>
               </button>
