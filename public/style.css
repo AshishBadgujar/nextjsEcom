@@ -221,6 +221,8 @@ button, input {
 .cart{
     display: flex;
     justify-content: space-between;
+    margin-top:20px;
+    margin-bottom:20px;
     /* padding: 30px; */
 }
 .cart div h6{
