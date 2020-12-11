@@ -101,7 +101,7 @@ function Cart({ error, products }) {
         )
     }
     return (
-        <div className="container">
+        <div className="container" style={{ paddingTop:'40px',paddingBottom:'40px'}}>
             <CartItems />
             <Total />
         </div>
