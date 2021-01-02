@@ -20,7 +20,7 @@ function Header() {
                     </div>
                     <div className="search">
                         <div className="header-search-form">
-                            <input type="text" placeholder="Search on divisima ...." />
+                            <input type="text" placeholder="Search on ashCart ...." />
                             <button><i className="flaticon-search"></i></button>
                         </div>
                     </div>
