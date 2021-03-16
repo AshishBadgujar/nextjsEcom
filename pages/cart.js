@@ -109,7 +109,7 @@ function Cart({ error, products }) {
     )
 }
 
-export async function getServerSideProps(ctx) {
+export async function getStaticProps(ctx) {
     const { token } = parseCookies(ctx)
     if (!token) {
         return {
