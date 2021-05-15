@@ -48,7 +48,7 @@ export default function Account({ orders }) {
 }
 
 
-export async function getStaticProps(ctx) {
+export async function getServerSideProps(ctx) {
     const { token } = parseCookies(ctx)
     if (!token) {
         ctx.res.writeHead(302, { Location: '/login' });
