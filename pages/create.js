@@ -42,7 +42,7 @@ export default function Create() {
         data.append('file', media)
         data.append('upload_preset', 'myStore')
         data.append('cloud_name', "ashish124")
-        const res = await fetch('https://api.cloudinary.com/v1_1/ashish124/image/upload', {
+        const res = await fetch(process.env.CLOUDINARY_URL, {
             method: "POST",
             body: data
         })
