@@ -1,5 +1,7 @@
 import React from 'react'
-import Link from 'next/link'
+import Link from 'next/link';
+import Image from 'next/image'
+
 
 export default function TopSellProd({ products }) {
     return (
@@ -24,7 +26,7 @@ export default function TopSellProd({ products }) {
                         return (
                             <div className="card">
                                 <div className="card-image">
-                                    <img src={product.mediaUrl} alt="" />
+                                    <Image src={product.mediaUrl} width={235} height={275} alt="topsell" />
                                     <span className="card-title">{product.name}</span>
                                     <Link href="/product/[id]" as={`/product/${product._id}`}>
                                         <a className="btn-floating halfway-fab waves-effect waves-light #f50057 pink accent-3"><i className="flaticon-bag"></i></a>

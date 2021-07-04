@@ -15,8 +15,8 @@ export default function Categories({ products }) {
                     <h4>CAtegory PAge</h4>
                     <div className="site-pagination">
                         <a href="">Home</a> /
-				        <a href="">Shop</a> /
-			        </div>
+                        <a href="">Shop</a> /
+                    </div>
                 </div>
             </div>
             <section className="category-section">
@@ -39,7 +39,7 @@ export default function Categories({ products }) {
     )
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
     const res = await Axios.get(`${baseUrl}/api/products`)
     const products = res.data
     return {

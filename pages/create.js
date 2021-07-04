@@ -50,7 +50,6 @@ export default function Create() {
         return res2.url
     }
 
-
     return (
         <>
             <div className="page-top-info">
@@ -58,8 +57,8 @@ export default function Create() {
                     <h4>Sell your Product</h4>
                     <div className="site-pagination">
                         <a href="">Home</a> /
-				        <a href="">Shop</a> /
-			        </div>
+                        <a href="">Shop</a> /
+                    </div>
                 </div>
             </div>
             <section className="creat_box_area z-depth-3">
@@ -116,7 +115,7 @@ export default function Create() {
                         /> <label htmlFor="desc">Description</label>
                     </div>
                     <button className="btn waves-effect waves-light" type="submit">Submit
-            <i className="material-icons right">send</i>
+                        <i className="material-icons right">send</i>
                     </button>
                 </form>
             </section>

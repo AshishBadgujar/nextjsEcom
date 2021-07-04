@@ -5,7 +5,6 @@ export default function Services() {
         <>
             <section className="features-section">
                 <div className="services-container z-depth-3">
-
                     <div className="feature">
                         <div className="feature-inner">
                             <div className="feature-icon">
@@ -30,7 +29,6 @@ export default function Services() {
                             <h2>Free & fast Delivery</h2>
                         </div>
                     </div>
-
                 </div>
             </section>
         </>

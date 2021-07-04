@@ -32,7 +32,7 @@ export default function Signup() {
                 <div className="hover">
                     <h4>Already member?</h4>
                     <p>There are advances being made in science and technology everyday, and a good example of this
-                    is the</p>
+                        is the</p>
                     <Link href="/login"><a className="btn waves-effect waves-light">Login here</a></Link>
                 </div>
             </div>

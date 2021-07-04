@@ -6,6 +6,7 @@ import baseUrl from '../helpers/baseUrl'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
 import StripeCheckout from 'react-stripe-checkout';
+import Image from 'next/image'
 
 function Cart({ error, products }) {
     const { token } = parseCookies()
@@ -55,7 +56,7 @@ function Cart({ error, products }) {
                     price = price + item.quantity * item.product.price
                     return (
                         <div className="cart" key={item.product._id}>
-                            <img src={item.product.mediaUrl} style={{ width: 200, height: 250 }} />
+                            <Image src={item.product.mediaUrl} width={200} height={250} alt="cart-img" />
                             <div style={{ marginLeft: '20px' }}>
                                 <h6>{item.product.name}</h6>
                                 <h6>{item.quantity} X ₹ {item.product.price} </h6>
@@ -101,7 +102,7 @@ function Cart({ error, products }) {
         )
     }
     return (
-        <div className="container" style={{ paddingTop:'40px',paddingBottom:'40px'}}>
+        <div className="container" style={{ paddingTop: '40px', paddingBottom: '40px' }}>
             <CartItems />
             <Total />
         </div>
@@ -109,7 +110,7 @@ function Cart({ error, products }) {
     )
 }
 
-export async function getStaticProps(ctx) {
+export async function getServerSideProps(ctx) {
     const { token } = parseCookies(ctx)
     if (!token) {
         return {

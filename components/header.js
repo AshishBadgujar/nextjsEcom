@@ -1,7 +1,8 @@
 import React from 'react'
 import Navbar from './nav'
 import Link from 'next/link'
-import { parseCookies } from 'nookies'
+import { parseCookies } from 'nookies';
+import Image from 'next/image'
 
 function Header() {
     const cookieUser = parseCookies()
@@ -14,7 +15,7 @@ function Header() {
                     <div className="logo">
                         <Link href="/" >
                             <a className="site-logo">
-                                <img src="http://res.cloudinary.com/ashish124/image/upload/v1604039520/jdwudxonbhbi5vdwkl14.png" alt="" style={{ height: '60px', width: '200px' }} />
+                                <Image src="http://res.cloudinary.com/ashish124/image/upload/v1604039520/jdwudxonbhbi5vdwkl14.png" alt="logo" width={200} height={60} />
                             </a>
                         </Link>
                     </div>
@@ -28,24 +29,23 @@ function Header() {
                     <div className="user-panel">
                         {user ?
                             <Link href="/account">
-                                <div className="up-item">
+                                <div className="up-item" style={{ cursor: "pointer" }}>
                                     <i className="flaticon-profile"></i>
                                     <a>{user.name}</a>
                                 </div>
                             </Link>
                             :
                             <Link href="/login">
-                                <div className="up-item">
+                                <div className="up-item" style={{ cursor: "pointer" }}>
                                     <i className="flaticon-profile"></i>
                                     <a>Sign</a> In or <a>Create Account</a>
                                 </div>
                             </Link>
                         }
                         <Link href="/cart">
-                            <div className="up-item">
+                            <div className="up-item" style={{ cursor: "pointer" }}>
                                 <div className="shopping-card">
                                     <i className="flaticon-bag"></i>
-                                    <span>0</span>
                                 </div>
                                 <a>Shopping Cart</a>
                             </div>

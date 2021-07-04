@@ -5,11 +5,11 @@ export default function Carousel() {
 
     const items = [
         <div className="carousel-item" id="one">
-            <div className="row">
+            <div className="row" style={{ width: "60vw" }}>
                 <h2>Denim jackets</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                ut labore et dolore magna aliqua. Quis ipsum sus-pendisse ultrices gravida. Risus
-                commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                    ut labore et dolore magna aliqua. Quis ipsum sus-pendisse ultrices gravida. Risus
+                    commodo viverra maecenas accumsan lacus vel facilisis. </p>
             </div>
             <div className="offer-card z-depth-5">
                 <span>from</span>
@@ -19,11 +19,11 @@ export default function Carousel() {
         </div>
         ,
         <div className="carousel-item" id="two">
-            <div className="row">
+            <div className="row" style={{ width: "60vw" }}>
                 <h2>Denim jackets</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                ut labore et dolore magna aliqua. Quis ipsum sus-pendisse ultrices gravida. Risus
-                commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                    ut labore et dolore magna aliqua. Quis ipsum sus-pendisse ultrices gravida. Risus
+                    commodo viverra maecenas accumsan lacus vel facilisis. </p>
             </div>
             <div className="offer-card z-depth-5">
                 <span>from</span>
@@ -42,11 +42,11 @@ export default function Carousel() {
         </div>
         ,
         <div className="carousel-item" id="six">
-            <div className="row">
+            <div className="row" style={{ width: "60vw" }}>
                 <h2>Denim's</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                ut labore et dolore magna aliqua. Quis ipsum sus-pendisse ultrices gravida. Risus
-                commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                    ut labore et dolore magna aliqua. Quis ipsum sus-pendisse ultrices gravida. Risus
+                    commodo viverra maecenas accumsan lacus vel facilisis. </p>
             </div>
             <div className="offer-card z-depth-5">
                 <span>from</span>
@@ -56,11 +56,11 @@ export default function Carousel() {
         </div>
         ,
         <div className="carousel-item" id="seven">
-            <div className="row">
+            <div className="row" style={{ width: "60vw" }}>
                 <h2>Shoes</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                ut labore et dolore magna aliqua. Quis ipsum sus-pendisse ultrices gravida. Risus
-                commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                    ut labore et dolore magna aliqua. Quis ipsum sus-pendisse ultrices gravida. Risus
+                    commodo viverra maecenas accumsan lacus vel facilisis. </p>
             </div>
             <div className="offer-card z-depth-5">
                 <span>from</span>

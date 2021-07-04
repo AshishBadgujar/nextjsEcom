@@ -110,14 +110,11 @@ button, input {
 
 /* latest products section */
 .alice-carousel__stage-item .card{
-    width: 290px;
+    width: 250px;
     height: 100%;
     box-shadow: none;
 }
-.alice-carousel__stage-item .card .card-image img{
-    height: 340px !important;
-    /* width: 290px; */
-}
+
 .card-content{
     padding: 10px !important;
 }
@@ -253,8 +250,8 @@ button, input {
         width:120px;
         height: 120px;
         font-size: 13px;
-        padding-left: 23px;
-        padding-right: 23px;
+        text-align: center;
+        border-radius: 50%;
     }
     .offer-card h1{
        font-size: 30px;
@@ -328,9 +325,7 @@ button, input {
         width: 170px;
         height: 100%;
     }
-    .alice-carousel__stage-item .card .card-image img{
-        height: 230px !important;
-    }
+  
     .row h2{
         font-size: 30px !important;
     }
